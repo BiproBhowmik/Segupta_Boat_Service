@@ -40,7 +40,9 @@ Route::group([
     });
 });
 
-Route::get('/', [IndexController::class, 'index']);
+Route::get('/products/list', [IndexController::class, 'products']);
+Route::get('/', [IndexController::class, 'test']);
+// Route::get('/', [IndexController::class, 'index']);
 Route::get('/contact-us', [ContactController::class, 'index']);
 Route::get('/packages', [PackagesController::class, 'index']);
 Route::get('/register', [LoginRegisterController::class, 'register']);
